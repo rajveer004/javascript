@@ -18,6 +18,15 @@ Because of issue in block scope and functional scope
 
 //------------------------------------Data types -----------------------
 
+            /*  2-types --> primitive(call by value or direct copy) 
+                                   STACK--memory 
+                           these are 7--> String ,Number,BigInt,Symbol,Boolean
+                                         null,undefined
+                
+               NON-Primitive(Reference)---> 3=> Array, Object, Function
+                   HEAP memory                          
+        */          
+
 "Use Strict";  //treat all JS code as  newer version
 // alert(3+3)       -->use in browser 
 
@@ -38,3 +47,7 @@ console.table([typeof name,age,isLogedIn])
 
 console.log(typeof undefined)   // always undefined
 console.log(typeof null)         // output--> object
+
+const id =Symbol("123")
+const anotherId = Symbol("123")
+console.log(id===anotherId)   //=>false
