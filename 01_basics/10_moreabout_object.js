@@ -59,3 +59,26 @@ console.log(Object.values(tinderUser))       //[ '123', 'John', 25, false ]
 console.log(Object.entries(tinderUser))   //[[ 'id', '123' ],[ 'name', 'John' ],[ 'age', 25 ],[ 'IsLogedIn', false ]]
 
 console.log(tinderUser.hasOwnProperty('IsLogedIn'))   //true
+
+const course ={ 
+    coursename:"Java Script",
+    courseDuration:"6 months",
+}
+// console.log(course.courseDuration)
+const {courseDuration : duration} = course;        //destructuring of object
+// console.log(courseDuration)
+console.log(duration)
+
+
+//about API's -->json-JavaScriptObjectNotation file
+// {
+    // "name" : "jhon",
+    // "study" : "JS",
+    // "age"   :20
+// }
+
+[
+    {},
+    {},
+    {},
+]
