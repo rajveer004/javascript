@@ -34,3 +34,38 @@ function loginUserMessage(username){        //(username = "sam")
 }
 console.log(loginUserMessage())
 console.log(loginUserMessage("Rajeevr"))
+
+
+//how function gets unlimited arguments
+function calculateCartPrice(...num1){   // rest operator -->...
+        return num1
+}
+console.log(calculateCartPrice(200,400,500,1000))   //[ 200, 400, 500, 1000 ]
+
+// function calculateCartPrice2(val1, val2, ...num2){   
+//     return num2
+// }
+// console.log(calculateCartPrice(200,400,500,1000))  // [500,1000]
+
+
+//how function use arguments as object and arrays
+
+const user = {
+    username : "hitesh",
+    price :119
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+// handleObject(user)
+handleObject({
+    username : "Rajeevr",
+    price : 1000
+})
+
+const myNewArray =[2,3,4,55,66]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray))   //3
+console.log(returnSecondValue([1,2,3,4]))      //2
